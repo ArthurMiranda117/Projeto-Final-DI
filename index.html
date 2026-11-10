@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetAdote - Adote um Amigo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <span>🐾</span>
+        <h1>PetAdote</h1>
+      </div>
+
+      <div class="acessibilidade">
+        <button id="btn-aumentar" title="Aumentar fonte">A+</button>
+        <button id="btn-diminuir" title="Diminuir fonte">A-</button>
+        <button id="btn-tema">🌙 Modo Escuro</button>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#pets">Pets</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="busca-box">
+        <input type="text" id="campo-busca" placeholder="Buscar cão, gato...">
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section id="inicio" class="secao-carrossel">
+      <div class="carrossel">
+        <img id="img-carrossel" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=800&q=80" alt="Cão feliz no gramado">
+        <div class="controles-carrossel">
+          <button id="btn-anterior">&laquo; Anterior</button>
+          <button id="btn-proximo">Próximo &raquo;</button>
+        </div>
+
+      </div>
+    </section>
+    <section id="pets" class="secao-pets">
+      <h2>Animais para Adoção</h2>   
+      <div class="grid-pets" id="lista-pets">
+        <article class="card-pet">
+          <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&q=80" alt="Cão vira-lata caramelo">
+          <div class="card-conteudo">
+            <h3>Pipoca</h3>
+            <span class="tag">Cão • 2 anos</span>
+            <p>Muito dócil, brincalhão e vacinado. Adora companhia.</p>
+            <a href="#contato" class="btn-adotar">Quero Adotar</a>
+          </div>
+
+        </article>
+        <article class="card-pet">
+          <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&q=80" alt="Gato cinza deitado">
+          <div class="card-conteudo">
+            <h3>Mimi</h3>
+            <span class="tag">Gato • 1 ano</span>
+            <p>Calma, carinhosa e castrada. Ideal para apartamentos.</p>
+            <a href="#contato" class="btn-adotar">Quero Adotar</a>
+          </div>
+        </article>
+
+        <article class="card-pet">
+          <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&q=80" alt="Filhote de cachorro">
+          <div class="card-conteudo">
+            <h3>Thor</h3>
+            <span class="tag">Cão • 5 meses</span>
+            <p>Cheio de energia, vermifugado e pronto para brincar.</p>
+            <a href="#contato" class="btn-adotar">Quero Adotar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="secao-contato">
+      <h2>Fale Conosco / Adotar</h2>
+      <form id="form-contato">
+        <div class="campo">
+          <label for="nome">Seu Nome:</label>
+          <input type="text" id="nome" required placeholder="Digite seu nome completo">
+        </div>
+
+        <div class="campo">
+          <label for="email">Seu E-mail:</label>
+          <input type="email" id="email" required placeholder="seu@email.com">
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" rows="4" required placeholder="Diga qual pet você quer adotar..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 PetAdote — Projeto Acadêmico de Web.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
