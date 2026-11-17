@@ -6,7 +6,7 @@ Projeto desenvolvido como atividade prática da disciplina de Desenvolvimento We
 
 ---
 
-## ✨ Funcionalidades
+##Funcionalidades
 
 * **Barra de Acessibilidade:**
   * Alternância entre **Modo Claro** e **Modo Escuro** com um clique.
@@ -18,7 +18,7 @@ Projeto desenvolvido como atividade prática da disciplina de Desenvolvimento We
 
 ---
 
-## 🎨 Paleta de Cores e Acessibilidade (WCAG)
+##Paleta de Cores e Acessibilidade (WCAG)
 
 As cores foram escolhidas com base na **Psicologia das Cores** e testadas para atender ao padrão internacional **WCAG 2.1 (Nível AA)** de contraste mínimo (`4.5:1`):
 
@@ -32,7 +32,7 @@ As cores foram escolhidas com base na **Psicologia das Cores** e testadas para a
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##Tecnologias Utilizadas
 
 * **HTML5:** Marcação semântica (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`) e textos alternativos (`alt`) em todas as imagens.
 * **CSS3:** Estilização com variáveis nativas (`:root`), **Flexbox** para alinhamento dos cartões e transições suaves.
