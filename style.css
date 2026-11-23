@@ -239,3 +239,40 @@
     color: var(--cor-primaria);
     text-align: center;
   }
+
+/*Rodape final tela*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-pagina);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+/*largura rodape*/
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px 15px;
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--cor-borda);
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
