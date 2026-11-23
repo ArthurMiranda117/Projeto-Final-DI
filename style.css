@@ -1,4 +1,4 @@
-/* VARIÁVEIS DE CORES */
+/*cores var*/
 :root {
     --bg-pagina: #F5F5F5;
     --bg-card: #FFFFFF;
@@ -9,7 +9,7 @@
     --tamanho-fonte: 16px;
   }
   
-  /* TEMA ESCURO */
+/*Tema*/
   body.dark-mode {
     --bg-pagina: #121212;
     --bg-card: #1E1E1E;
@@ -19,7 +19,7 @@
     --cor-borda: #333;
   }
   
-  /* ESTILOS GERAIS */
+/*estilo*/
   html {
     font-size: var(--tamanho-fonte);
   }
@@ -32,7 +32,7 @@
     line-height: 1.6;
   }
   
-  /* CABEÇALHO E NAV */
+/*nav e cabeçalho*/
   header {
     background-color: var(--bg-card);
     border-bottom: 2px solid var(--cor-borda);
@@ -93,14 +93,14 @@
     border-radius: 4px;
   }
   
-  /* CONTEÚDO PRINCIPAL */
+/*principal*/
   main {
     max-width: 900px;
     margin: 20px auto;
     padding: 0 15px;
   }
   
-  /* CARROSSEL */
+/*carrosel*/
   .secao-carrossel {
     text-align: center;
   }
@@ -125,7 +125,7 @@
     cursor: pointer;
   }
   
-  /* GRID DE PETS (CARDS) */
+/*gridpets*/
   .grid-pets {
     display: flex;
     gap: 20px;
@@ -169,7 +169,7 @@
     margin-top: 10px;
   }
   
-  /* FORMULÁRIO */
+#formulario
   .secao-contato {
     background-color: var(--bg-card);
     padding: 20px;
@@ -204,11 +204,38 @@
     cursor: pointer;
   }
   
-#rodape
+/*rodape*/
   footer {
     text-align: center;
     padding: 15px;
     background-color: var(--bg-card);
     border-top: 1px solid var(--cor-borda);
     margin-top: 30px;
+  }
+
+/*login*/
+.secao-login {
+    max-width: 420px;
+    margin: 40px auto;
+    background-color: var(--bg-card);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+  }
+  
+  .secao-login h2 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+  }
+  
+  .secao-login .btn-enviar {
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .feedback-login {
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    text-align: center;
   }
