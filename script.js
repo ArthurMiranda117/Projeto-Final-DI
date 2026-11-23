@@ -34,7 +34,7 @@ if (btnAumentar && btnDiminuir) {
   });
 }
 
-//carrosel
+//carrosel index
 const imgCarrossel = document.getElementById('img-carrossel');
 const btnAnterior = document.getElementById('btn-anterior');
 const btnProximo = document.getElementById('btn-proximo');
@@ -58,7 +58,7 @@ if (imgCarrossel && btnAnterior && btnProximo) {
   });
 }
 
-//pesquisa
+//pesquisa index
 const campoBusca = document.getElementById('campo-busca');
 const cards = document.querySelectorAll('.card-pet');
 
