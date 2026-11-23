@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - PetAdote</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <span>🐾</span>
+        <h1>PetAdote</h1>
+      </div>
+
+      <div class="acessibilidade">
+        <button id="btn-aumentar" title="Aumentar fonte">A+</button>
+        <button id="btn-diminuir" title="Diminuir fonte">A-</button>
+        <button id="btn-tema"> Modo Escuro</button>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">← Voltar para o Início</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="secao-login">
+      <h2>Acesso do Voluntário / Adotante</h2>
+      <p>Entre com seus dados para acompanhar seus pedidos de adoção.</p>
+
+      <form id="form-login">
+        <div class="campo">
+          <label for="login-email">E-mail:</label>
+          <input type="email" id="login-email" required placeholder="seu@email.com">
+        </div>
+
+        <div class="campo">
+          <label for="login-senha">Senha:</label>
+          <input type="password" id="login-senha" required minlength="6" placeholder="Mínimo 6 caracteres">
+        </div>
+
+        <button type="submit" class="btn-enviar">Entrar</button>
+      </form>
+
+      <p id="mensagem-login" class="feedback-login" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 PetAdote — Projeto Acadêmico de Web (2º Semestre).</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
