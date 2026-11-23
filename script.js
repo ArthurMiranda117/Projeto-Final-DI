@@ -42,7 +42,8 @@ const btnProximo = document.getElementById('btn-proximo');
 if (imgCarrossel && btnAnterior && btnProximo) {
   const imagens = [
     'https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=800&q=80',
-    'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&q=80'
+    'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&q=80',
+    'https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'
   ];
 
   let indiceAtual = 0;
