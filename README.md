@@ -1,4 +1,4 @@
-# 🐾 PetAdote — Portal Web de Adoção Animal
+# PetAdote — Portal Web de Adoção Animal
 
 Projeto desenvolvido como atividade prática da disciplina de Desenvolvimento Web (2º Semestre). O **PetAdote** é uma aplicação web responsiva e acessível criada para divulgar animais resgatados disponíveis para adoção responsável, facilitar o contato entre interessados e protetores e oferecer uma área de acesso para usuários.
 
