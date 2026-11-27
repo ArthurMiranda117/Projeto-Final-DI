@@ -143,7 +143,7 @@ const biosPets = {
   luna: {
     nome: 'Luna',
     tag: 'Cão • 11 meses • Porte Pequeno/Médio',
-    img: 'https://images.unsplash.com/photo-1762447984990-165426bfec44?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
+    img: 'https://images.unsplash.com/photo-1753128681155-d356ac106379?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
     alt: 'Filhote de cachorro',
     bio: 'Luna é a definição de companheira de sofá. Embora goste de uma caminhada curta, seu passatempo favorito é cochilar encostada no tutor.',
     detalhes: [
