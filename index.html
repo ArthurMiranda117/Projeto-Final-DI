@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🐾 PetAdote - Adote um Amigo</title>
+  <title>PetAdote - Adote um Amigo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,7 +37,7 @@
   <main>
     <section id="inicio" class="secao-carrossel">
       <div class="carrossel">
-        <img id="img-carrossel" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=800&q=80" alt="">
+        <img id="img-carrossel" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=800&q=80" alt="Cão vira-lata sorrindo ao ar livre">
         <div class="controles-carrossel">
           <button id="btn-anterior">&laquo; Anterior</button>
           <button id="btn-proximo">Próximo &raquo;</button>
@@ -53,7 +54,10 @@
             <h3>Pipoca</h3>
             <span class="tag">Cão • 2 anos</span>
             <p>Muito dócil, brincalhão e vacinado. Adora companhia.</p>
-            <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            <div class="card-acoes">
+              <button type="button" class="btn-ver-mais" data-pet="pipoca">Ver mais</button>
+              <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            </div>
           </div>
         </article>
 
@@ -63,7 +67,10 @@
             <h3>Mimi</h3>
             <span class="tag">Gato • 1 ano</span>
             <p>Calma, carinhosa e castrada. Ideal para apartamentos.</p>
-            <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            <div class="card-acoes">
+              <button type="button" class="btn-ver-mais" data-pet="mimi">Ver mais</button>
+              <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            </div>
           </div>
         </article>
 
@@ -73,7 +80,10 @@
             <h3>Thor</h3>
             <span class="tag">Cão • 5 meses</span>
             <p>Cheio de energia, vermifugado e pronto para brincar.</p>
-            <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            <div class="card-acoes">
+              <button type="button" class="btn-ver-mais" data-pet="thor">Ver mais</button>
+              <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            </div>
           </div>
         </article>
 
@@ -83,7 +93,10 @@
             <h3>Luna</h3>
             <span class="tag">Cão • 11 meses</span>
             <p>Um pouco preguiçosa, porém muito carinhosa.</p>
-            <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            <div class="card-acoes">
+              <button type="button" class="btn-ver-mais" data-pet="luna">Ver mais</button>
+              <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            </div>
           </div>
         </article>
 
@@ -92,8 +105,11 @@
           <div class="card-conteudo">
             <h3>Duke</h3>
             <span class="tag">Gato • 9 meses</span>
-            <p>Muito agitado e cheio de energia, é um amor com você</p>
-            <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            <p>Muito agitado e cheio de energia, é um amor com você.</p>
+            <div class="card-acoes">
+              <button type="button" class="btn-ver-mais" data-pet="duke">Ver mais</button>
+              <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            </div>
           </div>
         </article>
 
@@ -103,15 +119,34 @@
             <h3>Mel</h3>
             <span class="tag">Cão • 1 ano</span>
             <p>Muito ansiosa, ama sua companhia.</p>
-            <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            <div class="card-acoes">
+              <button type="button" class="btn-ver-mais" data-pet="mel">Ver mais</button>
+              <a href="login.html" class="btn-adotar">Quero Adotar</a>
+            </div>
           </div>
         </article>
       </div>
     </section>
   </main>
-    <footer>
-      <p>&copy; 2026 PetAdote — Todos os direitos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+  <div id="modal-pet" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" hidden>
+    <div class="modal-conteudo">
+      <button type="button" id="fechar-modal" class="btn-fechar-modal" aria-label="Fechar detalhes">&times;</button>
+      <img id="modal-img" src="" alt="">
+      <div class="modal-texto">
+        <span id="modal-tag" class="tag"></span>
+        <h3 id="modal-titulo"></h3>
+        <p id="modal-bio"></p>
+        <ul id="modal-detalhes" class="lista-detalhes"></ul>
+        <a href="login.html" class="btn-adotar">Quero Adotar</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 PetAdote — Arthur de Miranda Benis.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
